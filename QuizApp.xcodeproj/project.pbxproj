@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E8450C7D2BDA798E00297841 /* QuizAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C7C2BDA798E00297841 /* QuizAppApp.swift */; };
+		E8450C7D2BDA798E00297841 /* QuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C7C2BDA798E00297841 /* QuizApp.swift */; };
 		E8450C7F2BDA798E00297841 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C7E2BDA798E00297841 /* ContentView.swift */; };
 		E8450C812BDA798E00297841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8450C802BDA798E00297841 /* Assets.xcassets */; };
 		E8450C842BDA798E00297841 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8450C832BDA798E00297841 /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		E8450C792BDA798E00297841 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8450C7C2BDA798E00297841 /* QuizAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppApp.swift; sourceTree = "<group>"; };
+		E8450C7C2BDA798E00297841 /* QuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizApp.swift; sourceTree = "<group>"; };
 		E8450C7E2BDA798E00297841 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8450C802BDA798E00297841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8450C832BDA798E00297841 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		E8450C7B2BDA798E00297841 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				E8450C7C2BDA798E00297841 /* QuizAppApp.swift */,
+				E8450C7C2BDA798E00297841 /* QuizApp.swift */,
 				E8450C7E2BDA798E00297841 /* ContentView.swift */,
 				E8450C802BDA798E00297841 /* Assets.xcassets */,
 				E8450C822BDA798E00297841 /* Preview Content */,
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8450C7F2BDA798E00297841 /* ContentView.swift in Sources */,
-				E8450C7D2BDA798E00297841 /* QuizAppApp.swift in Sources */,
+				E8450C7D2BDA798E00297841 /* QuizApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
