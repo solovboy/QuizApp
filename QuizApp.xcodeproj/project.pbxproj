@@ -12,6 +12,8 @@
 		E8450C812BDA798E00297841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8450C802BDA798E00297841 /* Assets.xcassets */; };
 		E8450C842BDA798E00297841 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8450C832BDA798E00297841 /* Preview Assets.xcassets */; };
 		E8450C902BDB7F2E00297841 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C8F2BDB7F2E00297841 /* QuizView.swift */; };
+		E8450C932BDB853800297841 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C922BDB853800297841 /* MainButton.swift */; };
+		E8450C952BDB864000297841 /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C942BDB864000297841 /* AnswerRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		E8450C802BDA798E00297841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8450C832BDA798E00297841 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8450C8F2BDB7F2E00297841 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		E8450C922BDB853800297841 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		E8450C942BDB864000297841 /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 		E8450C912BDB814700297841 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E8450C922BDB853800297841 /* MainButton.swift */,
+				E8450C942BDB864000297841 /* AnswerRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -172,8 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8450C932BDB853800297841 /* MainButton.swift in Sources */,
 				E8450C7F2BDA798E00297841 /* OpeningView.swift in Sources */,
 				E8450C7D2BDA798E00297841 /* QuizApp.swift in Sources */,
+				E8450C952BDB864000297841 /* AnswerRow.swift in Sources */,
 				E8450C902BDB7F2E00297841 /* QuizView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

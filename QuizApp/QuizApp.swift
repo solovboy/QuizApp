@@ -1,5 +1,5 @@
 //
-//  QuizAppApp.swift
+//  QuizApp.swift
 //  QuizApp
 //
 //  Created by Иван Соловьев on 25.04.2024.
