@@ -31,6 +31,7 @@ struct OpeningView: View {
                 VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
                     Button(action: {
                         topic = "scan"
+                        print(topic)
                     }) {
                         NavigationLink(destination: QuizView()) {
                             MainButton(text: "Скандинавия")
