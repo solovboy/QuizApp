@@ -8,9 +8,9 @@
 import Foundation
 
 class QuizController: ObservableObject{
+    let length: Int
     var questions:[Question] = []
     @Published var score = 0
-    let length: Int
     @Published var index = 0
     @Published var end = false
     @Published var answerSelected = false

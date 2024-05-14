@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Question{
-    var topic: String
+struct Question: Decodable{
     var id: Int
     var text: String
     var correctAnswer: Int

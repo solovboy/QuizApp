@@ -17,7 +17,7 @@
 		E8450C972BDBBE2A00297841 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C962BDBBE2A00297841 /* Question.swift */; };
 		E8450C992BDBBFE800297841 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C982BDBBFE800297841 /* Answer.swift */; };
 		E8450C9B2BDBC09800297841 /* QuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C9A2BDBC09800297841 /* QuizController.swift */; };
-		E8450C9D2BDE364F00297841 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C9C2BDE364F00297841 /* Quiz.swift */; };
+		E8450C9D2BDE364F00297841 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C9C2BDE364F00297841 /* Topic.swift */; };
 		E8450C9F2BDE3A2F00297841 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = E8450C9E2BDE3A2F00297841 /* Data.json */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +33,7 @@
 		E8450C962BDBBE2A00297841 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		E8450C982BDBBFE800297841 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		E8450C9A2BDBC09800297841 /* QuizController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizController.swift; sourceTree = "<group>"; };
-		E8450C9C2BDE364F00297841 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		E8450C9C2BDE364F00297841 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		E8450C9E2BDE3A2F00297841 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +101,7 @@
 			children = (
 				E8450C962BDBBE2A00297841 /* Question.swift */,
 				E8450C982BDBBFE800297841 /* Answer.swift */,
-				E8450C9C2BDE364F00297841 /* Quiz.swift */,
+				E8450C9C2BDE364F00297841 /* Topic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 				E8450C972BDBBE2A00297841 /* Question.swift in Sources */,
 				E8450C952BDB864000297841 /* AnswerRow.swift in Sources */,
 				E8450C902BDB7F2E00297841 /* QuizView.swift in Sources */,
-				E8450C9D2BDE364F00297841 /* Quiz.swift in Sources */,
+				E8450C9D2BDE364F00297841 /* Topic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

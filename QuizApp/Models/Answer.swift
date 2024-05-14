@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Answer: Identifiable{
+struct Answer: Identifiable, Decodable{
     var id: UUID = UUID()
     var text: String
     var isCorrect: Bool
