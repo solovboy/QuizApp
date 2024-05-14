@@ -19,6 +19,7 @@
 		E8450C9B2BDBC09800297841 /* QuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C9A2BDBC09800297841 /* QuizController.swift */; };
 		E8450C9D2BDE364F00297841 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C9C2BDE364F00297841 /* Topic.swift */; };
 		E8450C9F2BDE3A2F00297841 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = E8450C9E2BDE3A2F00297841 /* Data.json */; };
+		E8FF31972BF3784000687373 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF31962BF3784000687373 /* QuizManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		E8450C9A2BDBC09800297841 /* QuizController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizController.swift; sourceTree = "<group>"; };
 		E8450C9C2BDE364F00297841 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		E8450C9E2BDE3A2F00297841 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		E8FF31962BF3784000687373 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		E8450C7B2BDA798E00297841 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				E8FF31952BF3780800687373 /* Managers */,
 				E8450C7C2BDA798E00297841 /* QuizApp.swift */,
 				E8450C9E2BDE3A2F00297841 /* Data.json */,
 				E8450C912BDB814700297841 /* Components */,
@@ -121,6 +124,14 @@
 				E8450C942BDB864000297841 /* AnswerRow.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E8FF31952BF3780800687373 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E8FF31962BF3784000687373 /* QuizManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 			files = (
 				E8450C932BDB853800297841 /* MainButton.swift in Sources */,
 				E8450C7F2BDA798E00297841 /* OpeningView.swift in Sources */,
+				E8FF31972BF3784000687373 /* QuizManager.swift in Sources */,
 				E8450C7D2BDA798E00297841 /* QuizApp.swift in Sources */,
 				E8450C992BDBBFE800297841 /* Answer.swift in Sources */,
 				E8450C9B2BDBC09800297841 /* QuizController.swift in Sources */,

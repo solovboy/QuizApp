@@ -8,85 +8,66 @@
 import SwiftUI
 
 struct QuizView: View {
-    @ObservedObject var controller: QuizController
+    @Environment(\.dismiss) private var dismiss
+    @ObservedObject private var controller: QuizController
     
-    init(){
-        let arr: [Question] = [
-            Question(topic:"Top1", id: 0, text: "Hello", correctAnswer: 0, answers:[
-                Answer(text: "Ans1", isCorrect: true),
-                Answer(text: "Ans2", isCorrect: false),
-                Answer(text: "Ans3", isCorrect: false),
-                Answer(text: "Ans4", isCorrect: false)
-            ]),
-            Question(topic:"Top2", id: 0, text: "Hello1", correctAnswer: 0, answers:[
-                Answer(text: "!!Ans1", isCorrect: true),
-                Answer(text: "Ans2", isCorrect: false),
-                Answer(text: "Ans3", isCorrect: false),
-                Answer(text: "Ans4", isCorrect: false)
-            ]),
-            Question(topic:"Top3", id: 0, text: "Hello2", correctAnswer: 0, answers:[
-                Answer(text: "__Ans1", isCorrect: true),
-                Answer(text: "Ans2", isCorrect: false),
-                Answer(text: "Ans3", isCorrect: false),
-                Answer(text: "Ans4", isCorrect: false)
-            ])
-            
-        ]
-        self.controller = QuizController(questions: arr)
+    init(question: [Question]) {
+        self.controller = QuizController(questions: question)
     }
+    
     var body: some View {
-        NavigationView{
-            VStack{
-                HStack{
-                    Text("Quiz Game Topic")
-                        .font(.title2)
-                        .bold()
-                    Spacer()
-                    Text("\(controller.index + 1) out of \(controller.length)")
-                        .fontWeight(.heavy)
-                }
-                
+        VStack{
+            HStack{
+                Text("Quiz Game Topic")
+                    .font(.title2)
+                    .bold()
                 Spacer()
-                VStack(alignment: .leading, spacing: 20){
-                    Text(self.controller.question)
-                        .font(.system(size: 25))
-                        .bold()
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    ForEach(self.controller.answers){ ans in
-                        AnswerRow(text: ans.text)
-                    }
-                    
-                    
-                }
-                
-                Spacer()
-                HStack{
-                    Button(action: {
-                    }) {
-                        NavigationLink(destination: OpeningView()) {
-                            MainButton(text: "Список тем")
-                        }
-                    }
-                    .disabled(false)
-                    Button {
-                        self.controller.goToNextQuestion()
-                    } label: {
-                        MainButton(text: "Далее")
-                    }
-                    .disabled(false)
-                }
-                
-                Spacer()
+                Text("\(controller.index + 1) out of \(controller.length)")
+                    .fontWeight(.heavy)
             }
-            .padding()
-            .navigationBarHidden(true)
+            Spacer()
+            VStack(alignment: .leading, spacing: 20){
+                Text(self.controller.question)
+                    .font(.system(size: 25))
+                    .bold()
+                Spacer()
+                    .frame(height: 10)
+                ForEach(self.controller.answers) { ans in
+                    Button {
+                        self.controller.selectAnswer(answer: ans)
+                    } label: {
+                        AnswerRow(text: ans.text)
+                            .background(controller.answerSelected ? (ans.isCorrect ? Color.green : Color.red) : Color.gray)
+                            .cornerRadius(10)
+                    }
+                    .disabled(self.controller.answerSelected)
+                }
+            }
+            Spacer()
+            HStack{
+                Button(action: {
+                    self.dismiss()
+                }) {
+                    MainButton(text: "Список тем")
+                }
+                Button {
+                    self.controller.goToNextQuestion()
+                } label: {
+                    MainButton(text: "Далее")
+                }
+                .disabled(!self.controller.answerSelected)
+            }
+            
+            Spacer()
         }
+        .padding()
         .navigationBarHidden(true)
+        
     }
 }
 
 #Preview {
-    QuizView()
+    let manager = MockQuizFileManager()
+    return QuizView(question: manager.greek)
 }
+
