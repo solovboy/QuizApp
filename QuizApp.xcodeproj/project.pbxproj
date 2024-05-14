@@ -21,6 +21,7 @@
 		E8FF31972BF3784000687373 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF31962BF3784000687373 /* QuizManager.swift */; };
 		E8FF31992BF379AD00687373 /* QuizFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF31982BF379AD00687373 /* QuizFileManager.swift */; };
 		E8FF319C2BF37A4500687373 /* quiz_json.txt in Resources */ = {isa = PBXBuildFile; fileRef = E8FF319B2BF37A4500687373 /* quiz_json.txt */; };
+		E8FF319E2BF37C2200687373 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF319D2BF37C2200687373 /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E8FF31962BF3784000687373 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 		E8FF31982BF379AD00687373 /* QuizFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizFileManager.swift; sourceTree = "<group>"; };
 		E8FF319B2BF37A4500687373 /* quiz_json.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz_json.txt; sourceTree = "<group>"; };
+		E8FF319D2BF37C2200687373 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				E8450C7E2BDA798E00297841 /* OpeningView.swift */,
 				E8450C8F2BDB7F2E00297841 /* QuizView.swift */,
+				E8FF319D2BF37C2200687373 /* ResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				E8FF31972BF3784000687373 /* QuizManager.swift in Sources */,
 				E8450C7D2BDA798E00297841 /* QuizApp.swift in Sources */,
 				E8450C992BDBBFE800297841 /* Answer.swift in Sources */,
+				E8FF319E2BF37C2200687373 /* ResultView.swift in Sources */,
 				E8450C9B2BDBC09800297841 /* QuizController.swift in Sources */,
 				E8450C972BDBBE2A00297841 /* Question.swift in Sources */,
 				E8450C952BDB864000297841 /* AnswerRow.swift in Sources */,

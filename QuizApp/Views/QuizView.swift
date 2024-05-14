@@ -62,7 +62,9 @@ struct QuizView: View {
         }
         .padding()
         .navigationBarHidden(true)
-        
+        .fullScreenCover(isPresented: self.$controller.end) {
+            ResultView(score: self.controller.score, length: self.controller.length)
+        }
     }
 }
 

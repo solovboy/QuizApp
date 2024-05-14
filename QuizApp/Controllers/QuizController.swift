@@ -27,7 +27,8 @@ class QuizController: ObservableObject{
             index += 1
             setQuestion()
         } else{
-            end = true
+            self.end = true
+            index = 0
         }
     }
     
