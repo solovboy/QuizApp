@@ -10,37 +10,42 @@ import Foundation
 class QuizController: ObservableObject{
     var questions:[Question] = []
     @Published var score = 0
-    @Published var length = 15
+    let length: Int
     @Published var index = 0
     @Published var end = false
     @Published var answerSelected = false
     @Published var question: String = ""
     @Published var answers: [Answer] = []
     
+    init(questions: [Question]){
+        self.length = questions.count
+        self.questions = questions
+        setQuestion()
+    }
     func goToNextQuestion(){
-            if index + 1 < length{
-                index += 1
-                setQuestion()
-            } else{
-                end = true
-            }
+        if index + 1 < length{
+            index += 1
+            setQuestion()
+        } else{
+            end = true
         }
+    }
+    
+    func setQuestion(){
+        answerSelected = false
         
-        func setQuestion(){
-            answerSelected = false
-            
-            if index < length{
-                let currentQuestion = questions[index]
-                question = currentQuestion.text
-                answers = currentQuestion.answers
-            }
+        if index < length{
+            let currentQuestion = questions[index]
+            question = currentQuestion.text
+            answers = currentQuestion.answers
         }
-        
-        func selectAnswer(answer: Answer){
-            answerSelected = true
-            if answer.isCorrect{
-                score += 1
-            }
+    }
+    
+    func selectAnswer(answer: Answer){
+        answerSelected = true
+        if answer.isCorrect{
+            score += 1
         }
+    }
     
 }

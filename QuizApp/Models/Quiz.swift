@@ -9,4 +9,5 @@ import Foundation
 
 struct Quiz{
     var questions: [Question]
+    
 }
