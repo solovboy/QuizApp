@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct QuizApp: App {
+    
+    let manager = QuizFileManager()
+    //let manager = MockQuizFileManager()
+    
     var body: some Scene {
         WindowGroup {
-            OpeningView()
+            //OpeningView(manager: MockQuizFileManager())
+            OpeningView(manager: self.manager)
         }
     }
 }

@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol QuizMangerProtocol {
+protocol QuizManagerProtocol {
     func loadQuiz() -> [Topic]?
 }
 
-final class MockQuizFileManager: QuizMangerProtocol {
+final class MockQuizFileManager: QuizManagerProtocol {
     let scandinavian : [Question] = [
         Question(
             id: 0,
