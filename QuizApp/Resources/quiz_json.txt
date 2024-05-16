@@ -1,57 +1,46 @@
 [
   {
-    "id" : "9760D4F2-1B1C-4AFA-AE1A-3FDC1804F43D",
-    "text" : "Скандинавская",
+    "text" : "Topic 1",
     "questions" : [
       {
-        "id" : 0,
         "text" : "Question 1",
         "correctAnswer" : 1,
         "answers" : [
           {
-            "id" : "9C5D2873-6C46-4D1C-B0AC-4C55CE13BFB4",
             "text" : "Answer 1",
             "isCorrect" : true
           },
           {
-            "id" : "2CA6D7E9-185D-4C6D-82A2-5BDE9F1D11A6",
             "text" : "Answer 2",
             "isCorrect" : false
           },
           {
-            "id" : "A7E141CD-BAB5-4EAC-8AC2-5AA5484A1B77",
             "text" : "Answer 3",
             "isCorrect" : false
           },
           {
-            "id" : "37C537AC-9DAF-4540-BE7E-7C0808E7D6FE",
             "text" : "Answer 4",
             "isCorrect" : false
           }
         ]
       },
       {
-        "id" : 1,
         "text" : "Question 2",
         "correctAnswer" : 2,
         "answers" : [
           {
-            "id" : "9C5D2873-6C46-4D1C-B0AC-4C55CE13BFB4",
             "text" : "Answer 1",
             "isCorrect" : true
           },
           {
-            "id" : "2CA6D7E9-185D-4C6D-82A2-5BDE9F1D11A6",
             "text" : "Answer 2",
             "isCorrect" : false
           },
           {
-            "id" : "A7E141CD-BAB5-4EAC-8AC2-5AA5484A1B77",
             "text" : "Answer 3",
             "isCorrect" : false
           },
           {
-            "id" : "37C537AC-9DAF-4540-BE7E-7C0808E7D6FE",
             "text" : "Answer 4",
             "isCorrect" : false
           }
@@ -60,118 +49,47 @@
     ]
   },
   {
-    "id" : "63DDF1D0-24DE-4AE6-9187-BE7A1BC39E6E",
-    "text" : "Греческая",
+    "text" : "Topic 2",
     "questions" : [
       {
-        "id" : 0,
-        "text" : "Question 1",
+        "text" : "Question 3",
         "correctAnswer" : 3,
         "answers" : [
           {
-            "id" : "9C5D2873-6C46-4D1C-B0AC-4C55CE13BFB4",
             "text" : "Answer 1",
             "isCorrect" : true
           },
           {
-            "id" : "2CA6D7E9-185D-4C6D-82A2-5BDE9F1D11A6",
             "text" : "Answer 2",
             "isCorrect" : false
           },
           {
-            "id" : "A7E141CD-BAB5-4EAC-8AC2-5AA5484A1B77",
             "text" : "Answer 3",
             "isCorrect" : false
           },
           {
-            "id" : "37C537AC-9DAF-4540-BE7E-7C0808E7D6FE",
             "text" : "Answer 4",
             "isCorrect" : false
           }
         ]
       },
       {
-        "id" : 1,
-        "text" : "Question 2",
+        "text" : "Question 4",
         "correctAnswer" : 4,
         "answers" : [
           {
-            "id" : "9C5D2873-6C46-4D1C-B0AC-4C55CE13BFB4",
             "text" : "Answer 1",
             "isCorrect" : true
           },
           {
-            "id" : "2CA6D7E9-185D-4C6D-82A2-5BDE9F1D11A6",
             "text" : "Answer 2",
             "isCorrect" : false
           },
           {
-            "id" : "A7E141CD-BAB5-4EAC-8AC2-5AA5484A1B77",
             "text" : "Answer 3",
             "isCorrect" : false
           },
           {
-            "id" : "37C537AC-9DAF-4540-BE7E-7C0808E7D6FE",
-            "text" : "Answer 4",
-            "isCorrect" : false
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id" : "63DDF1D0-24DE-4AE6-9187-BE7A1BC39E8E",
-    "text" : "Египетская",
-    "questions" : [
-      {
-        "id" : 0,
-        "text" : "Question 1",
-        "correctAnswer" : 3,
-        "answers" : [
-          {
-            "id" : "9C5D2873-6C46-4D1C-B0AC-4C55CE13B3B4",
-            "text" : "Answer 1",
-            "isCorrect" : true
-          },
-          {
-            "id" : "2CA6D7E9-185D-4C6D-82A2-5B4E9F1D11A6",
-            "text" : "Answer 2",
-            "isCorrect" : false
-          },
-          {
-            "id" : "A7E141CD-BAB5-4EAC-8AC2-5AA5486A1B77",
-            "text" : "Answer 3",
-            "isCorrect" : false
-          },
-          {
-            "id" : "37C537AC-9DAF-4540-BE7E-7C0808E0D6FE",
-            "text" : "Answer 4",
-            "isCorrect" : false
-          }
-        ]
-      },
-      {
-        "id" : 1,
-        "text" : "Question 7",
-        "correctAnswer" : 4,
-        "answers" : [
-          {
-            "id" : "9C5D2873-6C46-4D1C-B0AC-4C55CE13BFB4",
-            "text" : "Answer 1",
-            "isCorrect" : true
-          },
-          {
-            "id" : "2CA6D7E9-185D-4C6D-82A2-5BDE9F1D12A6",
-            "text" : "Answer 2",
-            "isCorrect" : false
-          },
-          {
-            "id" : "A7E141CD-BAB5-4EAC-8AC2-5AA5484A1B77",
-            "text" : "Answer 3",
-            "isCorrect" : false
-          },
-          {
-            "id" : "37C537AC-9DAF-4540-BE7E-7C0808E7D6FE",
             "text" : "Answer 4",
             "isCorrect" : false
           }

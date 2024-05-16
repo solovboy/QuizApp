@@ -14,7 +14,6 @@ protocol QuizManagerProtocol {
 final class MockQuizFileManager: QuizManagerProtocol {
     let scandinavian : [Question] = [
         Question(
-            id: 0,
             text: "Hello",
             correctAnswer: 0,
             answers: [
@@ -25,7 +24,6 @@ final class MockQuizFileManager: QuizManagerProtocol {
             ]
         ),
         Question(
-            id: 1,
             text: "Hello2",
             correctAnswer: 0,
             answers: [
@@ -36,7 +34,6 @@ final class MockQuizFileManager: QuizManagerProtocol {
             ]
         ),
         Question(
-            id: 2,
             text: "Hello3",
             correctAnswer: 0,
             answers: [
@@ -51,7 +48,6 @@ final class MockQuizFileManager: QuizManagerProtocol {
     
     let greek : [Question] = [
         Question(
-            id: 0,
             text: "Hello",
             correctAnswer: 0,
             answers: [
@@ -62,7 +58,6 @@ final class MockQuizFileManager: QuizManagerProtocol {
             ]
         ),
         Question(
-            id: 1,
             text: "Hello2",
             correctAnswer: 0,
             answers: [

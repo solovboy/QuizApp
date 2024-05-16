@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Topic: Identifiable, Decodable{
-    var id: UUID = UUID()
+struct Topic: Decodable{
     var text: String
     var questions: [Question]
     

@@ -8,7 +8,6 @@
 import Foundation
 
 struct Question: Decodable{
-    var id: Int
     var text: String
     var correctAnswer: Int
     var answers: [Answer]
