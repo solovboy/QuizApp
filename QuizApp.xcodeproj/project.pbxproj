@@ -20,7 +20,7 @@
 		E8450C9D2BDE364F00297841 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8450C9C2BDE364F00297841 /* Topic.swift */; };
 		E8FF31972BF3784000687373 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF31962BF3784000687373 /* QuizManager.swift */; };
 		E8FF31992BF379AD00687373 /* QuizFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF31982BF379AD00687373 /* QuizFileManager.swift */; };
-		E8FF319C2BF37A4500687373 /* quiz_json.txt in Resources */ = {isa = PBXBuildFile; fileRef = E8FF319B2BF37A4500687373 /* quiz_json.txt */; };
+		E8FF319C2BF37A4500687373 /* quiz_data.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FF319B2BF37A4500687373 /* quiz_data.json */; };
 		E8FF319E2BF37C2200687373 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF319D2BF37C2200687373 /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,7 @@
 		E8450C9C2BDE364F00297841 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		E8FF31962BF3784000687373 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 		E8FF31982BF379AD00687373 /* QuizFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizFileManager.swift; sourceTree = "<group>"; };
-		E8FF319B2BF37A4500687373 /* quiz_json.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz_json.txt; sourceTree = "<group>"; };
+		E8FF319B2BF37A4500687373 /* quiz_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quiz_data.json; sourceTree = "<group>"; };
 		E8FF319D2BF37C2200687373 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +143,7 @@
 		E8FF319A2BF379FC00687373 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E8FF319B2BF37A4500687373 /* quiz_json.txt */,
+				E8FF319B2BF37A4500687373 /* quiz_data.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 			files = (
 				E8450C842BDA798E00297841 /* Preview Assets.xcassets in Resources */,
 				E8450C812BDA798E00297841 /* Assets.xcassets in Resources */,
-				E8FF319C2BF37A4500687373 /* quiz_json.txt in Resources */,
+				E8FF319C2BF37A4500687373 /* quiz_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

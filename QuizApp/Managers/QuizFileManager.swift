@@ -9,7 +9,7 @@ import Foundation
 
 class QuizFileManager: QuizManagerProtocol {
     func loadQuiz() -> [Topic]? {
-        if let filePath = Bundle.main.path(forResource: "quiz_json", ofType: "txt") {
+        if let filePath = Bundle.main.path(forResource: "quiz_data", ofType: "json") {
             do {
                 let contents = try String(contentsOfFile: filePath)
                 let jsonData = contents.data(using: .utf8) ?? Data()
