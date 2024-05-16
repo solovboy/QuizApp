@@ -25,7 +25,7 @@ struct QuizView: View {
     var body: some View {
         VStack{
             HStack{
-                Text("Quiz Game Topic")
+                Text(self.title)
                     .font(.title2)
                     .bold()
                 Spacer()
