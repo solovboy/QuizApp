@@ -64,6 +64,7 @@ struct QuizView: View {
                     self.controller.goToNextQuestion()
                 } label: {
                     MainButton(text: "Далее")
+                        .opacity(controller.answerSelected ? 1 : 0.5)
                 }
                 .disabled(!self.controller.answerSelected)
             }
