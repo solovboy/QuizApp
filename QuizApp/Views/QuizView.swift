@@ -14,8 +14,10 @@ class QuizeNavigation: ObservableObject {
 struct QuizView: View {
     @Environment(\.dismiss) private var dismiss
     @ObservedObject private var controller: QuizController
+    let title: String
     
-    init(questions: [Question]) {
+    init(questions: [Question], title: String) {
+        self.title = title
         self.controller = QuizController(questions: questions)
     }
     
@@ -36,9 +38,10 @@ struct QuizView: View {
                     .bold()
                 Spacer()
                     .frame(height: 10)
-                ForEach(self.controller.answers) { ans in
+                ForEach(self.controller.answers, id: \.text) { ans in
                     Button {
-                        self.controller.selectAnswer(answer: ans)
+                        ans.selectAnswer(controller: controller)
+                        //self.controller.selectAnswer(answer: ans)
                     } label: {
                         AnswerRow(text: ans.text)
                             .background(controller.answerSelected ? (ans.isCorrect ? Color.green : Color.red) : Color.gray)
@@ -77,6 +80,6 @@ struct QuizView: View {
 
 #Preview {
     let manager = MockQuizFileManager()
-    return QuizView(questions: manager.greek)
+    return QuizView(questions: manager.greek, title: "Title")
 }
 

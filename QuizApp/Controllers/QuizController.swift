@@ -42,11 +42,11 @@ class QuizController: ObservableObject{
         }
     }
     
-    func selectAnswer(answer: Answer){
-        answerSelected = true
-        if answer.isCorrect{
-            score += 1
-        }
-    }
+//  func selectAnswer(answer: Answer){
+//      answerSelected = true
+//      if answer.isCorrect{
+//          score += 1
+//      }
+//  }
     
 }

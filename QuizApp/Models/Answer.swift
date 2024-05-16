@@ -10,4 +10,11 @@ import Foundation
 struct Answer: Decodable{
     var text: String
     var isCorrect: Bool
+    
+    func selectAnswer(controller: QuizController){
+        controller.answerSelected = true
+        if isCorrect {
+            controller.score += 1
+        }
+    }
 }

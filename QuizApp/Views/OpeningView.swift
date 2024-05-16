@@ -10,6 +10,7 @@ import SwiftUI
 struct OpeningView: View {
     
     @State var topics: [Topic]
+    @StateObject var navigation = QuizeNavigation()
     
     init(manager: QuizManagerProtocol) {
         // Тут можно будет поставить обработку случая, если не удалось получить данные
@@ -33,8 +34,8 @@ struct OpeningView: View {
                 Spacer()
                     .frame(height: 10)
                 VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
-                    ForEach(self.topics) { topic in
-                        NavigationLink(destination: QuizView(questions: topic.questions)) {
+                    ForEach(self.topics, id: \.text) { topic in
+                        NavigationLink(destination: QuizView(questions: topic.questions, title: topic.text)) {
                             MainButton(text: topic.text)
                         }
                     }
@@ -44,6 +45,7 @@ struct OpeningView: View {
             .edgesIgnoringSafeArea(.all)
         }
         .navigationBarHidden(true)
+        .environmentObject(navigation)
     }
 }
 
