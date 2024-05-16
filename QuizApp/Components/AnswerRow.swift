@@ -19,7 +19,8 @@ struct AnswerRow: View {
         }
         .padding()
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-        .background(.gray)
+        .foregroundColor(.black)
+        //.background(.gray)
         .cornerRadius(10)
         }
     }

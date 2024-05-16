@@ -7,12 +7,16 @@
 
 import SwiftUI
 
+class QuizeNavigation: ObservableObject {
+    @Published var isShow: Bool = true
+}
+
 struct QuizView: View {
     @Environment(\.dismiss) private var dismiss
     @ObservedObject private var controller: QuizController
     
-    init(question: [Question]) {
-        self.controller = QuizController(questions: question)
+    init(questions: [Question]) {
+        self.controller = QuizController(questions: questions)
     }
     
     var body: some View {
@@ -43,6 +47,9 @@ struct QuizView: View {
                     .disabled(self.controller.answerSelected)
                 }
             }
+            NavigationLink(destination: ResultView(score: self.controller.score, length: self.controller.length), isActive: self.$controller.end) {
+                EmptyView()
+            }
             Spacer()
             HStack{
                 Button(action: {
@@ -70,6 +77,6 @@ struct QuizView: View {
 
 #Preview {
     let manager = MockQuizFileManager()
-    return QuizView(question: manager.greek)
+    return QuizView(questions: manager.greek)
 }
 

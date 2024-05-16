@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ResultView: View {
     @Environment(\.dismiss) private var dismiss
+    
+    @EnvironmentObject var navigation: QuizeNavigation
+    
     let score: Int
     let length: Int
     var body: some View {
@@ -38,6 +41,9 @@ struct ResultView: View {
         .padding()
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
         .navigationBarHidden(true)
+        .onChange(of: self.navigation.isShow, { oldValue, newValue in
+            self.dismiss()
+        })
     }
 }
 

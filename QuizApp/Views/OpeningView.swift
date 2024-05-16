@@ -34,7 +34,7 @@ struct OpeningView: View {
                     .frame(height: 10)
                 VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
                     ForEach(self.topics) { topic in
-                        NavigationLink(destination: QuizView(question: topic.questions)) {
+                        NavigationLink(destination: QuizView(questions: topic.questions)) {
                             MainButton(text: topic.text)
                         }
                     }
@@ -48,6 +48,6 @@ struct OpeningView: View {
 }
 
 #Preview {
-    let manager = MockQuizFileManager()
+    let manager = QuizFileManager()
     return OpeningView(manager: manager)
 }

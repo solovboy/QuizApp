@@ -12,7 +12,6 @@ class QuizFileManager: QuizManagerProtocol {
         if let filePath = Bundle.main.path(forResource: "quiz_json", ofType: "txt") {
             do {
                 let contents = try String(contentsOfFile: filePath)
-                print(contents)
                 let jsonData = contents.data(using: .utf8) ?? Data()
                 let topics = try JSONDecoder().decode([Topic].self, from: jsonData)
                 return topics
