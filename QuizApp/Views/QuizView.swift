@@ -14,6 +14,7 @@ class QuizeNavigation: ObservableObject {
 struct QuizView: View {
     @Environment(\.dismiss) private var dismiss
     @ObservedObject private var controller: QuizController
+    @EnvironmentObject var navigation: QuizeNavigation
     let title: String
     
     init(questions: [Question], title: String) {
@@ -56,7 +57,7 @@ struct QuizView: View {
             Spacer()
             HStack{
                 Button(action: {
-                    self.dismiss()
+                    self.navigation.isShow.toggle()
                 }) {
                     MainButton(text: "Список тем")
                 }
@@ -71,11 +72,11 @@ struct QuizView: View {
             
             Spacer()
         }
+        .onChange(of: self.navigation.isShow, { oldValue, newValue in
+            self.dismiss()
+        })
         .padding()
         .navigationBarHidden(true)
-        .fullScreenCover(isPresented: self.$controller.end) {
-            ResultView(score: self.controller.score, length: self.controller.length)
-        }
     }
 }
 

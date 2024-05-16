@@ -31,7 +31,7 @@ struct ResultView: View {
                 .multilineTextAlignment(.center)
             Spacer()
             Button(action: {
-                self.dismiss()
+                self.navigation.isShow.toggle()
             }) {
                 MainButton(text: "Список тем")
             }
